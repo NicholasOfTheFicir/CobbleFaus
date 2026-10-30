@@ -60,7 +60,6 @@
 - Xaero's World Map 1.41.2 (https://modrinth.com/mod/xaeros-world-map/versions?g=1.21.1&l=fabric)
 - Zoomify 2.15.2 (https://modrinth.com/mod/zoomify/versions?g=1.21.1&l=fabric)
 - Explorer's Compass 2.6.0 (https://modrinth.com/mod/explorers-compass/versions?g=1.21.1&l=fabric)
-- ScalableLux 0.3.0-alpha.0.7 (https://modrinth.com/mod/scalablelux/versions?g=1.21.1&l=fabric)
 - Concurrent Chunk Management Engine 0.4.0-alpha.0.30 (https://modrinth.com/mod/c2me-fabric/versions?g=1.21.1)
 - ModernFix 5.25.1 (https://modrinth.com/mod/modernfix/versions?g=1.21.1&l=fabric)
 

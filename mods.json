@@ -1,0 +1,742 @@
+[
+  {
+    "nome": "3D Armor",
+    "versione": "0.9.4.2",
+    "descrizione": "Renderizza le armature in 3D.",
+    "link": "https://cdn.modrinth.com/data/XhxKIfGG/versions/ap0X7Uod/3d-armor-0.9.4.2-mod.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "3D Skin Layer",
+    "versione": "1.11.3",
+    "descrizione": "Renderizza i layer delle skin in 3D.",
+    "link": "https://cdn.modrinth.com/data/zV5r3pPn/versions/L1pQ9OzF/skinlayers3d-fabric-1.11.3-mc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Accessories",
+    "versione": "1.1.0-beta.54",
+    "descrizione": "Sistema per equipaggiare accessori.",
+    "link": "https://cdn.modrinth.com/data/jtmvUHXj/versions/YZ9RWTNl/accessories-fabric-1.1.0-beta.54%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Aio's Extra Structures!",
+    "versione": "4.9.3",
+    "descrizione": "Nuove strutture generate nel mondo. (Gamba's choice)",
+    "link": "https://cdn.modrinth.com/data/fhlJH7f6/versions/32a9uJ9Y/AioStructures-4.9.3.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Architectury API",
+    "versione": "13.0.11",
+    "descrizione": "Libreria per la compatibilità tra modloader.",
+    "link": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/Pzc2FP5K/architectury-13.0.11-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Athena",
+    "versione": "4.0.6",
+    "descrizione": "Libreria per la gestione delle texture conesse.",
+    "link": "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/JfyYsWKP/athena-fabric-1.21.1-4.0.6.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Bad packets",
+    "versione": "0.8.2",
+    "descrizione": "Libreria di utilità per i pacchetti di rete.",
+    "link": "https://cdn.modrinth.com/data/ftdbN0KK/versions/hjhT2sMz/badpackets-fabric-0.8.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Balm",
+    "versione": "21.0.66",
+    "descrizione": "Libreria per il supporto di Multi-Loaders.",
+    "link": "https://cdn.modrinth.com/data/MBAkmtvl/versions/EghJxg4h/balm-fabric-1.21.1-21.0.66.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Cardinal Components API",
+    "versione": "6.1.3",
+    "descrizione": "Libreria per l'aggiunta di dati agli oggetti/entità.",
+    "link": "https://cdn.modrinth.com/data/K01OU20C/versions/nLsCe2VD/cardinal-components-api-6.1.3.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Cloth Config API",
+    "versione": "15.0.140",
+    "descrizione": "Libreria per la creazione di menu di configurazione.",
+    "link": "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "CobbleFurnies",
+    "versione": "1.2",
+    "descrizione": "Mobili e decorazioni a tema Pokémon.",
+    "link": "https://cdn.modrinth.com/data/AXY1OO9m/versions/54k31lEX/CobbleFurnies-fabric-1.2.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon",
+    "versione": "1.8.2",
+    "descrizione": "Mod principale per catturare, allenare e combattere con i Pokémon.",
+    "link": "https://cdn.modrinth.com/data/MdwFAVRL/versions/GJ2a1b8O/Cobblemon-fabric-1.8.2%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Armors",
+    "versione": "1.6.0+1.8.2",
+    "descrizione": "Armature a tema Pokémon con abilità speciali.",
+    "link": "https://cdn.modrinth.com/data/WwDbGW1s/versions/bbuLGt1k/cobblemon-armors-1.6.0%2B1.8.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Capture XP",
+    "versione": "1.8.2-1.3.0",
+    "descrizione": "Fornisce esperienza quando si catturano Pokémon.",
+    "link": "https://cdn.modrinth.com/data/LBl4Qguc/versions/kOksvvoK/capturexp-fabric-1.8.2-1.3.0.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Counter",
+    "versione": "1.8.2-1.9.2",
+    "descrizione": "Tiene traccia internamente delle statistiche (catture, sconfitte).",
+    "link": "https://cdn.modrinth.com/data/rj8uLYP4/versions/XVgw17RK/counter-fabric-1.8.2-1.9.2.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Expeditions",
+    "versione": "1.8.1",
+    "descrizione": "Aggiunge un sistema con cui spedire i Pokémon in missione in cambio di ricompense.",
+    "link": "https://cdn.modrinth.com/data/HtRy1shF/versions/FXR0tS34/cobblemon-expeditions-fabric-1.8.1.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Pasture Loot",
+    "versione": "1.0.5",
+    "descrizione": "I Pokémon nei pascoli possono droppare oggetti.",
+    "link": "https://cdn.modrinth.com/data/XP2jcAo0/versions/MYJtblOM/pastureLoot-1.0.5%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon PokeNav",
+    "versione": "2.4.2",
+    "descrizione": "Strumento per localizzare i Pokémon trovabili in ogni zona.",
+    "link": "https://cdn.modrinth.com/data/bI8Nt3uA/versions/wq3mHFqw/cobblenav-fabric-2.4.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Pokemon Badges",
+    "versione": "0.1.1",
+    "descrizione": "Aggiunge le medaglie.",
+    "link": "https://cdn.modrinth.com/data/pPldOOeY/versions/LFfopB1R/cobblemonpokemonbadges-fabric-0.1.1.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon Tim Core",
+    "versione": "1.34.0",
+    "descrizione": "Libreria di base per alcune mod della Cobblemon.",
+    "link": "https://cdn.modrinth.com/data/lVP9aUaY/versions/dtgPWpFE/timcore-fabric-1.8.2-1.34.0.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Cobblemon Unchained",
+    "versione": "1.8.2-1.7.2",
+    "descrizione": "Modifiche e miglioramenti al gameplay di Cobblemon tramite catene basate sulle statistiche.",
+    "link": "https://cdn.modrinth.com/data/wh0wnzrT/versions/pLZ4eWoo/unchained-fabric-1.8.2-1.7.2.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon: Mega Showdown",
+    "versione": "1.3.1",
+    "descrizione": "Aggiunge le Mega Evoluzioni, Mosse-Z, Dynamax/Gigamax e Teracristallizzazione.",
+    "link": "https://cdn.modrinth.com/data/SszvX85I/versions/aNO1eGQi/mega_showdown-fabric-1.3.1%2B1.8.2%2B1.21.1-release.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon: PlayerXP",
+    "versione": "1.0.9",
+    "descrizione": "Conente di ottenere XP quando si sconffigge un Pokémon.",
+    "link": "https://cdn.modrinth.com/data/zlrbPCvu/versions/f6114Tas/playerxp-fabric-1.0.9%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon: SafePastures",
+    "versione": "1.1.2",
+    "descrizione": "Protegge i Pokémon nei pascoli da ogni tipo di danno.",
+    "link": "https://cdn.modrinth.com/data/qpe01spE/versions/gHHJ8bPf/SafePastures%28Fabric%29-1.1.2%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobbleworkers",
+    "versione": "2.0.6",
+    "descrizione": "Automatizza compiti con l'aiuto dei Pokémon nei pascoli.",
+    "link": "https://cdn.modrinth.com/data/i3XVG2gn/versions/BcVKyzkk/cobbleworkers-fabric-2.0.6%2B1.8.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Concurrent Chunk Management Engine",
+    "versione": "0.4.0-alpha.0.30",
+    "descrizione": "Ottimizza il caricamento dei chunk.",
+    "link": "https://cdn.modrinth.com/data/VSNURh3q/versions/KxcgERSN/c2me-fabric-mc1.21.1-0.4.0-alpha.0.30.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Distant Horizons",
+    "versione": "3.3.3",
+    "descrizione": "Aumenta drasticamente la distanza di rendering (LOD).",
+    "link": "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Emote Tweaks",
+    "versione": "1.0.4",
+    "descrizione": "Miglioramenti per il sistema di emote.",
+    "link": "https://cdn.modrinth.com/data/DUXvHuhO/versions/wZ0fGKeR/emotetweaks-fabric-1.0.4.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Emotecraft",
+    "versione": "2.4.12",
+    "descrizione": "Permette di eseguire emote.",
+    "link": "https://cdn.modrinth.com/data/pZ2wrerK/versions/daqt5qcK/emotecraft-for-MC1.21.1-2.4.12-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Enhanced Block Entities",
+    "versione": "0.10.2",
+    "descrizione": "Migliora le prestazioni visive delle entità (es. casse).",
+    "link": "https://cdn.modrinth.com/data/OVuFYfre/versions/HBZAPs3u/enhancedblockentities-0.10.2%2B1.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false 
+  },
+  {
+    "nome": "Entity Culling",
+    "versione": "1.11.3",
+    "descrizione": "Ottimizzazione per evitare il rendering di entità nascoste.",
+    "link": "https://cdn.modrinth.com/data/NNAgCjsB/versions/yllJFBpU/entityculling-fabric-1.11.3-mc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Entity Model Features",
+    "versione": "3.3.12",
+    "descrizione": "Supporto per modelli delle entità personalizzate.",
+    "link": "https://cdn.modrinth.com/data/4I1XuqiY/versions/90RfzkYP/entity_model_features-3.3.12-1.21-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": true
+  },
+  {
+    "nome": "Entity Texture Features",
+    "versione": "7.2.6",
+    "descrizione": "Supporto per texture delle entità personalizzate.",
+    "link": "https://cdn.modrinth.com/data/BVzZfTc1/versions/LNZeTHJf/entity_texture_features-7.2.6-1.21-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": true
+  },
+  {
+    "nome": "Explorer's Compass",
+    "versione": "2.6.0",
+    "descrizione": "Bussola per trovare strutture specifiche (Palestre).",
+    "link": "https://cdn.modrinth.com/data/RV1qfVQ8/versions/qSRKiE4D/ExplorersCompass-1.21.1-2.6.0-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Fabric API",
+    "versione": "0.116.17",
+    "descrizione": "Libreria per il funzionamento delle mod su Fabric.",
+    "link": "https://cdn.modrinth.com/data/P7dR8mSH/versions/Mys3P7lK/fabric-api-0.116.17%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Fabric Language Kotlin",
+    "versione": "2.4.21",
+    "descrizione": "Libreria per il supporto del linguaggio Kotlin.",
+    "link": "https://cdn.modrinth.com/data/Ha28R6CL/versions/SKW1BTL3/fabric-language-kotlin-1.14.2%2Bkotlin.2.4.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "FallingTree",
+    "versione": "1.21.1.11",
+    "descrizione": "Permette di tagliare interi alberi colpendo un solo blocco (tenere premuto shift per rompere un singolo blocco).",
+    "link": "https://cdn.modrinth.com/data/Fb4jn8m6/versions/wxGXaJMA/FallingTree-1.21.1-1.21.1.11.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "FerriteCore",
+    "versione": "7.0.3",
+    "descrizione": "Ottimizza notevolmente l'uso della RAM.",
+    "link": "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Forge Config API Port",
+    "versione": "21.1.6",
+    "descrizione": "Libreria per utilizzare i file di configurazione di Forge su Fabric.",
+    "link": "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Fzzy Config",
+    "versione": "0.7.7",
+    "descrizione": "Libreria per menu di configurazione.",
+    "link": "https://cdn.modrinth.com/data/hYykXjDp/versions/zFccjYag/fzzy_config-0.7.7%2B1.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Geckolib",
+    "versione": "4.9.3",
+    "descrizione": "Libreria per animazioni avanzate delle entità.",
+    "link": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/tmxM7U4W/geckolib-fabric-1.21.1-4.9.3.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "ImmediatelyFast",
+    "versione": "1.6.15",
+    "descrizione": "Ottimizzazione del rendering generale.",
+    "link": "https://cdn.modrinth.com/data/5ZwdcRci/versions/aLnBqxFW/ImmediatelyFast-Fabric-1.6.15%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Immersive Paintings",
+    "versione": "0.7.9",
+    "descrizione": "Aggiunge quadri personalizzabili.",
+    "link": "https://cdn.modrinth.com/data/6txNkua3/versions/wP4Wd1IW/immersive_paintings-fabric-1.21.1-0.7.9.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Iris Shaders",
+    "versione": "1.8.14-beta.1",
+    "descrizione": "Permette l'utilizzo degli shader.",
+    "link": "https://cdn.modrinth.com/data/YL57xq9U/versions/bAo1Qhte/iris-fabric-1.8.14-beta.1%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Krypton",
+    "versione": "0.2.8",
+    "descrizione": "Ottimizza il layer di rete di Minecraft.",
+    "link": "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "LambDynamicLights",
+    "versione": "4.8.11",
+    "descrizione": "Aggiunge le luci dinamiche.",
+    "link": "https://cdn.modrinth.com/data/yBW8D80W/versions/ksaGCvSu/lambdynamiclights-4.8.11%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Lithium",
+    "versione": "0.15.4",
+    "descrizione": "Migliora le prestazioni del server.",
+    "link": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Lithostitched",
+    "versione": "1.8.1",
+    "descrizione": "Libreria necessaria per la generazione del mondo (Terralith).",
+    "link": "https://cdn.modrinth.com/data/XaDC71GB/versions/GZFp8lnS/lithostitched-1.8.1-fabric-21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Load My F***ing Tags",
+    "versione": "1.1.1",
+    "descrizione": "Risolve errori di compatibilità nei tag dei datapack.",
+    "link": "https://cdn.modrinth.com/data/67kVxsaO/versions/mn7K4mkS/lmft-1.1.1%2B1.21.9-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "LumyREI",
+    "versione": "1.1.3",
+    "descrizione": "Integrazione per i crafting della Cobblemon con la REI.",
+    "link": "https://cdn.modrinth.com/data/FVADf9wU/versions/PnYguaC2/LumyREI-1.1.3.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Mod Menu",
+    "versione": "11.0.5",
+    "descrizione": "Schermata per la gestione delle mod installate.",
+    "link": "https://cdn.modrinth.com/data/mOgUt4GM/versions/6lgOkclV/modmenu-11.0.5.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "ModernFix",
+    "versione": "5.25.1",
+    "descrizione": "Risolve bug e migliora l'uso della memoria.",
+    "link": "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "More Culling",
+    "versione": "1.0.10",
+    "descrizione": "Migliora il culling dei blocchi.",
+    "link": "https://cdn.modrinth.com/data/51shyZVL/versions/wUYbHzXF/moreculling-fabric-1.21.1-1.0.10.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Nature's Compass",
+    "versione": "2.6.0",
+    "descrizione": "Bussola per trovare biomi specifici.",
+    "link": "https://cdn.modrinth.com/data/fPetb5Kh/versions/dtrDpgsF/NaturesCompass-1.21.1-2.6.0-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Ore Vein Miner",
+    "versione": "7.01R",
+    "descrizione": "Mina intere vene di minerali in un colpo solo tenendo premuto shift.",
+    "link": "https://cdn.modrinth.com/data/Xl2GihRU/versions/DGYptgDM/ore-vein-miner-7.01R.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "oωo (owo-lib)",
+    "versione": "0.12.15.4",
+    "descrizione": "Libreria per interfacce e configurazioni.",
+    "link": "https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Radical Cobblemon Trainers",
+    "versione": "0.19.2-beta",
+    "descrizione": "Aggiunge allenatori NPC da sfidare.",
+    "link": "https://cdn.modrinth.com/data/lRwTUnD7/versions/rgfBfnW9/rctmod-fabric-1.21.1-0.19.2-beta.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Radical Cobblemon Trainers API",
+    "versione": "0.16.2-beta",
+    "descrizione": "Libreria API per i Radical Trainers.",
+    "link": "https://cdn.modrinth.com/data/CBfM2yw7/versions/DoQNDXAU/rctapi-fabric-1.21.1-0.16.2-beta.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Radical Gyms & Structures",
+    "versione": "0.7",
+    "descrizione": "Aggiunge palestre e nuove strutture a tema.",
+    "link": "https://cdn.modrinth.com/data/3sLJoaQH/versions/TWiuaa3o/Radical%20Gyms%20%20Structures%20-%20RGS.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Roughly Enough Items",
+    "versione": "16.0.799",
+    "descrizione": "Mostra le ricette e gli oggetti del gioco.",
+    "link": "https://cdn.modrinth.com/data/nfn13YXA/versions/aWzTESNC/RoughlyEnoughItems-16.0.799-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Shulker Box Tooltips",
+    "versione": "5.1.9",
+    "descrizione": "Permette di vedere il contenuto delle shulker box senza aprirle.",
+    "link": "https://cdn.modrinth.com/data/2M01OLQq/versions/NSrItCES/shulkerboxtooltip-fabric-5.1.9%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Simple Voice Chat",
+    "versione": "2.6.22",
+    "descrizione": "Aggiunge la chat vocale di prossimità in gioco.",
+    "link": "https://cdn.modrinth.com/data/9eGKb6K1/versions/VS5X7jZd/voicechat-fabric-1.21.1-2.6.22.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Sodium",
+    "versione": "0.8.13",
+    "descrizione": "Ottimizzazioni generali del gioco.",
+    "link": "https://cdn.modrinth.com/data/AANobbMI/versions/SMxNOGZ6/sodium-fabric-0.8.13%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Sodium Extra",
+    "versione": "0.9.4",
+    "descrizione": "Impostazioni grafiche extra per Sodium.",
+    "link": "https://cdn.modrinth.com/data/PtjYWJkn/versions/YEWu6red/sodium-extra-fabric-0.9.4%2Bmc1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
+    "nome": "Styled Chat",
+    "versione": "2.6.1",
+    "descrizione": "Migliora e formatta la chat testuale del server.",
+    "link": "https://cdn.modrinth.com/data/doqSKB0e/versions/4e1xZSk3/styled-chat-2.6.1%2B1.21.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Terralith",
+    "versione": "2.6.2",
+    "descrizione": "Migliora drasticamente la generazione dei biomi.",
+    "link": "https://cdn.modrinth.com/data/8oi3bsk5/versions/eWDLFabb/Terralith_1.21.x_v2.6.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Traveler's Backpack",
+    "versione": "10.1.39",
+    "descrizione": "Zaini spaziosi ed utili per l'esplorazione.",
+    "link": "https://cdn.modrinth.com/data/rlloIFEV/versions/npKsvQvE/travelersbackpack-fabric-1.21.1-10.1.39.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Waystones",
+    "versione": "21.1.46",
+    "descrizione": "Pietre per il teletrasporto rapido tra zone.",
+    "link": "https://cdn.modrinth.com/data/LOpKHB2A/versions/nSAwjAk4/waystones-fabric-1.21.1-21.1.46.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "WTHIT",
+    "versione": "12.10.2",
+    "descrizione": "Mostra informazioni sul blocco/entità che stai guardando.",
+    "link": "https://cdn.modrinth.com/data/6AQIaxuO/versions/3TElmFLp/wthit-1.21.1-fabric-12.10.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Xaero's Maps x Waystones",
+    "versione": "2.12.1",
+    "descrizione": "Integrazione tra la minimappa di Xaero e i Waystones.",
+    "link": "https://cdn.modrinth.com/data/iv2jCzkP/versions/ZjH85u5I/xmxw-2.12.1%2B1.21.1-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": true
+  },
+  {
+    "nome": "Xaero's Minimap",
+    "versione": "26.1.0",
+    "descrizione": "Minimappa a schermo.",
+    "link": "https://cdn.modrinth.com/data/1bokaNcj/versions/UlRSujUV/xaerominimap-fabric-1.21.1-26.1.0.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Xaero's World Map",
+    "versione": "1.41.2",
+    "descrizione": "Mappa a schermo intero del mondo esplorato.",
+    "link": "https://cdn.modrinth.com/data/NcUtCpym/versions/9ts5xgne/xaeroworldmap-fabric-1.21.1-1.41.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "YetAnotherConfigLib",
+    "versione": "3.8.2",
+    "descrizione": "Libreria per la gestione delle configurazioni.",
+    "link": "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
+    "nome": "Zoomify",
+    "versione": "2.15.2",
+    "descrizione": "Permette di ingrandire la visuale.",
+    "link": "https://cdn.modrinth.com/data/w7ThoJFB/versions/6jrMC48Z/zoomify-2.15.2%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  }
+]
