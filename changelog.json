@@ -60,11 +60,18 @@
         "isTexture": true
       },
       {
+        "nome": "E19 - Cobblemon Minimap Icons",
+        "versione": "1.5.4",
+        "descrizione": "Icone dei Pokémon nella minimappa.",
+        "link": "https://cdn.modrinth.com/data/Va3BanZa/versions/bG73ljU7/E19%20Cobblemon%20Minimap%20Icons.zip?mr_download_reason=standalone&mr_game_version=1.21.1",
+        "isTexture": true
+      },
+      {
         "nome": "Beautify: Refrabricated",
         "versione": "3.6.5",
         "descrizione": "Aggiunge decorazioni in stile vanilla.",
         "link": "https://cdn.modrinth.com/data/DhSSvaxs/versions/qpzaFKKc/beautify-3.6.5-fabric%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
-        "isTexture": true
+        "isTexture": false
       },
       {
         "nome": "Vanilla Backport",
