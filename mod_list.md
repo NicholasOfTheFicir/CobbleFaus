@@ -68,7 +68,6 @@
     - Entity Model Features 3.3.12 (https://modrinth.com/mod/entity-model-features/versions?g=1.21.1&l=fabric)
 - Entity Texture Features 7.2.6 (https://modrinth.com/mod/entitytexturefeatures/versions?g=1.21.1&l=fabric)
 - Entity Culling 1.11.3 (https://modrinth.com/mod/entityculling/versions?g=1.21.1&l=fabric)
-# - Fusion (Connected Textures) 1.3.16 (https://modrinth.com/mod/fusion-connected-textures/versions?g=1.21.1&l=fabric)
 - FerriteCore 7.0.3 (https://modrinth.com/mod/ferrite-core/versions?g=1.21.1&l=fabric)
 - Iris Shaders 1.8.14 (https://modrinth.com/mod/iris/versions?g=1.21.1&l=fabric)
 - LambDynamicLights 4.8.11 (https://modrinth.com/mod/lambdynamiclights/versions?g=1.21.1&l=fabric)
@@ -80,6 +79,7 @@
 - Xaero's Maps x Waystones 2.12.1 (https://modrinth.com/mod/xaeros-maps-x-waystones/versions?g=1.21.1&l=fabric)
 - ImmediatelyFast 1.6.15 (https://modrinth.com/mod/immediatelyfast/versions?c=release&g=1.21.1&l=fabric)
 - Enhanced Block Entities 0.10.2 (https://modrinth.com/mod/ebe/versions?g=1.21.1&l=fabric)
+- Global Pakcs 21.0.6 (https://modrinth.com/mod/globalpacks/versions?c=release&g=1.21.1&l=fabric)
 
 # Sever Only
 - FallingTree 1.21.1.11 (https://modrinth.com/mod/fallingtree/versions?g=1.21.1&l=fabric)

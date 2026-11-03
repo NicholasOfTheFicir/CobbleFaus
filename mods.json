@@ -410,6 +410,16 @@
     "isLibrary": true
   },
   {
+    "nome": "Global Pakcs",
+    "versione": "21.0.6",
+    "descrizione": "Mod per la gestione delle texture packs.",
+    "link": "https://cdn.modrinth.com/data/NRLPy2mk/versions/ErTctr3A/globalpacks-fabric-1.21.1-21.0.6.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
     "nome": "ImmediatelyFast",
     "versione": "1.6.15",
     "descrizione": "Ottimizzazione del rendering generale.",

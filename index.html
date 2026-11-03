@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod List - Server Cobblemon</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
             color: var(--text-color);
             margin: 0;
             padding: 20px;
-            padding-bottom: 100px; /* Spazio extra a fine pagina */
+            padding-bottom: 100px;
             line-height: 1.6;
         }
 
@@ -52,32 +53,39 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
         }
 
-        .info-grid {
+        /* SWITCHER MODS / TEXTURES */
+        .switcher-container {
             display: flex;
+            justify-content: center;
             gap: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 35px;
+            margin-top: 20px;
         }
 
-        .info-item {
-            flex: 1; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .info-label {
-            font-size: 0.85em;
-            color: #8fa1c9; 
-            text-transform: uppercase;
+        .switcher-btn {
+            background-color: #1f2430;
+            color: #5c6b8f;
+            border: 2px solid #3a4259;
+            padding: 12px 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.1em;
             font-weight: bold;
             letter-spacing: 1px;
+            transition: all 0.2s ease;
         }
 
-        .info-value {
-            font-size: 1.8em; 
-            font-weight: bold;
-            color: var(--text-color);
+        .switcher-btn:hover {
+            border-color: var(--primary-color);
+            color: #f1f1f1;
+        }
+
+        .switcher-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 0 12px rgba(227, 53, 57, 0.4);
         }
 
         /* FILTRI MULTIPLI CON GRUPPI */
@@ -130,7 +138,7 @@
             box-shadow: 0 0 8px rgba(68, 176, 227, 0.2);
         }
 
-        /* BADGES (Etichette in colonna) */
+        /* BADGES */
         .badges-container { 
             display: flex; 
             flex-direction: column; 
@@ -183,29 +191,27 @@
 
         a { color: #64B5F6; text-decoration: none; font-weight: bold; }
         
-        /* Stile aggiornato per le versioni */
         .version {
             background-color: var(--primary-color);
             color: white;
             padding: 4px 10px;
             border-radius: 4px;
             font-size: 0.9em;
-            white-space: nowrap; /* Impedisce al testo di andare a capo */
+            white-space: nowrap;
             display: inline-block;
         }
 
-        /* Stile per il logo Modrinth */
         .modrinth-logo {
-            width: 45px; /* Regola la dimensione a piacimento */
+            width: 45px;
             height: auto;
             vertical-align: middle;
             transition: transform 0.2s ease, filter 0.2s ease;
-            filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6)); /* Aggiunge un bagliore azzurro */
+            filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
         }
 
         a:hover .modrinth-logo {
-            transform: scale(1.15); /* Ingrandisce leggermente il logo al passaggio del mouse */
-            filter: drop-shadow(0 0 8px rgba(100, 181, 246, 0.6)); /* Aggiunge un bagliore azzurro */
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 8px rgba(100, 181, 246, 0.6));
         }
 
         footer {
@@ -221,6 +227,34 @@
             max-width: 700px;
             width: 100%;
             height: auto;
+        }
+
+        .info-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 0.85em;
+            color: #8fa1c9; 
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .info-value {
+            font-size: 1.8em; 
+            font-weight: bold;
+            color: var(--text-color);
         }
     </style>
 </head>
@@ -240,13 +274,17 @@
                     <span class="info-value">Fabric</span>
                 </div>
             </div>
-            <p>Qui trovi la lista aggiornata di tutte le mod necessarie per entrare nel server. Assicurati di scaricare le versioni esatte indicate qui sotto per evitare crash o problemi di compatibilità.</p>
+            <p>Qui trovi la lista aggiornata di tutte le mod e resource pack necessari per entrare nel server. Assicurati di scaricare le versioni esatte indicate qui sotto per evitare crash o problemi di compatibilità.</p>
         </div>
 
-        <h2>FILTRA MOD</h2>
+        <div class="switcher-container">
+            <button class="switcher-btn active" data-file="mods.json">MODS</button>
+            <button class="switcher-btn" data-file="textures.json">TEXTURES</button>
+        </div>
+
+        <h2>FILTRA CONTENUTI</h2>
 
         <div class="filters-container">
-            <!-- Gruppo 1: Tema -->
             <div class="filter-group">
                 <button class="filter-btn active" data-group="theme" data-value="cobblemon">Cobblemon</button>
                 <button class="filter-btn active" data-group="theme" data-value="generic">Generiche</button>
@@ -254,7 +292,6 @@
             
             <div class="filter-separator"></div>
             
-            <!-- Gruppo 2: Lato -->
             <div class="filter-group">
                 <button class="filter-btn active" data-group="side" data-value="client">Client-Side</button>
                 <button class="filter-btn active" data-group="side" data-value="server">Server-Side</button>
@@ -262,17 +299,22 @@
             
             <div class="filter-separator"></div>
 
-            <!-- Gruppo 3: Tipo -->
             <div class="filter-group">
                 <button class="filter-btn active" data-group="type" data-value="gameplay">Gameplay</button>
                 <button class="filter-btn active" data-group="type" data-value="library">Librerie</button>
             </div>
         </div>
         
+        <!-- NUOVA BOLLA NOTA BENE (Inizia nascosta tramite style="display: none;") -->
+        <div id="texture-note" class="info-box" style="display: none; border-left-color: var(--secondary-color); text-align: center;">
+            <strong>⚠️ NOTA:</strong> I pacchetti texture vanno inseriti all'interno della cartella <code>.minecraft/global_packs</code> di Minecraft! ⚠️<br>
+            Se la cartella non esiste ancora, creala a mano.
+        </div>
+
         <table>
             <thead>
                 <tr>
-                    <th>Nome Mod</th>
+                    <th>Nome</th>
                     <th>Categorie</th>
                     <th>Versione</th>
                     <th>Descrizione</th>
@@ -285,57 +327,76 @@
         </table>
 
         <footer>
-            Ultimo aggiornamento: 30 Ottobre 2026<br>
+            Ultimo aggiornamento: Novembre 2026<br>
         </footer>
     </div>
 
     <script>
-        let allMods = [];
+        let allItems = [];
         const tableBody = document.getElementById('mod-table-body');
         const filterButtons = document.querySelectorAll('.filter-btn');
+        const switcherButtons = document.querySelectorAll('.switcher-btn');
+        const textureNote = document.getElementById('texture-note');
 
-        // Carica i dati dal file JSON
-        fetch('mods.json')
-            .then(response => response.json())
-            .then(data => {
-                allMods = data;
-                renderTable(allMods);
-            })
-            .catch(error => console.error('Errore nel caricamento del JSON:', error));
+        // Funzione centralizzata per caricare un file JSON
+        function loadData(file) {
+            fetch(file)
+                .then(response => response.json())
+                .then(data => {
+                    allItems = data;
+                    applyFilters(); 
+                })
+                .catch(error => console.error(`Errore nel caricamento del JSON (${file}):`, error));
+        }
 
-        // Funzione per disegnare la tabella
-        function renderTable(mods) {
+        // Caricamento iniziale (Mods di default)
+        loadData('mods.json');
+
+        // Gestione dei click sui nuovi pulsanti Mods/Textures
+        switcherButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                switcherButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Mostra la nota solo se siamo nella tab Textures
+                if (button.dataset.file === 'textures.json') {
+                    textureNote.style.display = 'block';
+                } else {
+                    textureNote.style.display = 'none';
+                }
+
+                loadData(button.dataset.file);
+            });
+        });
+
+        function renderTable(items) {
             tableBody.innerHTML = ''; 
 
-            if (mods.length === 0) {
-                tableBody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #8fa1c9; font-style: italic;">Nessuna mod corrisponde ai filtri selezionati.</td></tr>`;
+            if (items.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #8fa1c9; font-style: italic;">Nessun elemento corrisponde ai filtri selezionati.</td></tr>`;
                 return;
             }
 
-            mods.forEach(mod => {
+            items.forEach(item => {
                 let badges = '';
                 
-                // Tema
-                if (mod.isCobblemon) badges += `<span class="badge badge-cobblemon">Cobblemon</span>`;
+                if (item.isCobblemon) badges += `<span class="badge badge-cobblemon">Cobblemon</span>`;
                 else badges += `<span class="badge badge-generic">Generica</span>`;
                 
-                // Lato
-                if (mod.clientSide) badges += `<span class="badge badge-client">Client</span>`;
-                if (mod.serverSide) badges += `<span class="badge badge-server">Server</span>`;
+                if (item.clientSide) badges += `<span class="badge badge-client">Client</span>`;
+                if (item.serverSide) badges += `<span class="badge badge-server">Server</span>`;
                 
-                // Tipo
-                if (mod.isLibrary) badges += `<span class="badge badge-library">Libreria</span>`;
+                if (item.isLibrary) badges += `<span class="badge badge-library">Libreria</span>`;
                 else badges += `<span class="badge badge-gameplay">Gameplay</span>`;
 
                 const row = document.createElement('tr');
-                // Sostituito il testo "Download" con l'immagine del logo Modrinth
                 row.innerHTML = `
-                    <td><strong>${mod.nome}</strong></td>
+                    <td><strong>${item.nome}</strong></td>
                     <td><div class="badges-container">${badges}</div></td>
-                    <td><span class="version">${mod.versione}</span></td>
-                    <td>${mod.descrizione}</td>
+                    <td><span class="version">${item.versione}</span></td>
+                    <td>${item.descrizione}</td>
                     <td>
-                        <a href="${mod.link}" target="_blank" title="Scarica su Modrinth">
+                        <a href="${item.link}" target="_blank" title="Scarica su Modrinth">
                             <img src="modrinth-logo.png" alt="Download" class="modrinth-logo">
                         </a>
                     </td>
@@ -344,32 +405,30 @@
             });
         }
 
-        // Applica logicamente i filtri in base ai pulsanti attivi
         function applyFilters() {
             const activeThemes = Array.from(document.querySelectorAll('.filter-btn.active[data-group="theme"]')).map(btn => btn.dataset.value);
             const activeSides = Array.from(document.querySelectorAll('.filter-btn.active[data-group="side"]')).map(btn => btn.dataset.value);
             const activeTypes = Array.from(document.querySelectorAll('.filter-btn.active[data-group="type"]')).map(btn => btn.dataset.value);
 
-            const filteredMods = allMods.filter(mod => {
+            const filteredItems = allItems.filter(item => {
                 let passTheme = false;
-                if (activeThemes.includes('cobblemon') && mod.isCobblemon) passTheme = true;
-                if (activeThemes.includes('generic') && !mod.isCobblemon) passTheme = true;
+                if (activeThemes.includes('cobblemon') && item.isCobblemon) passTheme = true;
+                if (activeThemes.includes('generic') && !item.isCobblemon) passTheme = true;
 
                 let passSide = false;
-                if (activeSides.includes('client') && mod.clientSide) passSide = true;
-                if (activeSides.includes('server') && mod.serverSide) passSide = true;
+                if (activeSides.includes('client') && item.clientSide) passSide = true;
+                if (activeSides.includes('server') && item.serverSide) passSide = true;
 
                 let passType = false;
-                if (activeTypes.includes('library') && mod.isLibrary) passType = true;
-                if (activeTypes.includes('gameplay') && !mod.isLibrary) passType = true;
+                if (activeTypes.includes('library') && item.isLibrary) passType = true;
+                if (activeTypes.includes('gameplay') && !item.isLibrary) passType = true;
 
                 return passTheme && passSide && passType;
             });
 
-            renderTable(filteredMods);
+            renderTable(filteredItems);
         }
 
-        // Gestione dei click sui filtri
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
                 button.classList.toggle('active');
