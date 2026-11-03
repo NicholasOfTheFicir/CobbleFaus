@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Server Cobblemon</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #1a1e29;
+            --container-bg: #252a38;
+            --primary-color: #E33539; 
+            --secondary-color: #44b0e3;
+            --text-color: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 100px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        h1 { text-align: center; color: var(--secondary-color); margin-bottom: 30px; }
+
+        .btn-back {
+            display: inline-block;
+            background-color: transparent;
+            color: #8fa1c9;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: color 0.2s;
+        }
+        .btn-back:hover { color: var(--text-color); }
+
+        details {
+            background-color: #1f2430;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3a4259;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        details:first-of-type {
+            border-left-color: var(--primary-color);
+        }
+
+        summary {
+            padding: 18px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        summary:hover { background-color: #252b3b; }
+        summary::-webkit-details-marker { display: none; }
+
+        summary::after {
+            content: '+';
+            color: var(--secondary-color);
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        details[open] summary::after { content: '−'; }
+        details[open] summary { border-bottom: 1px solid #2f364a; }
+
+        .date-badge {
+            font-size: 0.8em;
+            color: #8fa1c9;
+            font-weight: normal;
+            background: #2c3244;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-left: auto;
+            margin-right: 15px;
+        }
+
+        .changelog-content {
+            padding: 20px;
+            background-color: #2c3244;
+        }
+
+        .changelog-content ul {
+            margin: 0 0 15px 0; 
+            padding-left: 20px;
+            color: #d1d5e0;
+        }
+        .changelog-content li { margin-bottom: 6px; }
+
+        /* TAG NOTE */
+        .tag-add { color: #81c784; font-weight: bold; }
+        .tag-remove { color: #e57373; font-weight: bold; }
+        .tag-fix { color: #64B5F6; font-weight: bold; }
+
+        /* MINI TABELLA */
+        .changelog-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 6px;
+            margin-top: 15px;
+        }
+
+        .changelog-table th, .changelog-table td {
+            padding: 10px 14px;
+            font-size: 0.9em;
+        }
+
+        .changelog-table th {
+            color: var(--secondary-color);
+            background-color: #1a1e29;
+            text-align: center;
+        }
+
+        .changelog-table th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; text-align: left; }
+        .changelog-table th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+        .changelog-table td {
+            background-color: #1f2430;
+            text-align: left;
+        }
+
+        .changelog-table td:nth-child(2), .changelog-table td:nth-child(4) {
+            text-align: center;
+        }
+
+        .changelog-table td:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+        .changelog-table td:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+        /* DIFFERENZIAZIONE MOD VS TEXTURE SULLE RIGHE */
+        .changelog-table tr.row-texture td {
+            background-color: #1e2836; /* Sfondo leggermente più azzurrato */
+        }
+        .changelog-table tr.row-texture td:first-child {
+            border-left: 3px solid var(--secondary-color);
+        }
+        .changelog-table tr.row-mod td:first-child {
+            border-left: 3px solid var(--primary-color);
+        }
+
+        /* MINI BADGE ACCANTO AL NOME */
+        .item-type-badge {
+            font-size: 0.65em;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 6px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .type-badge-mod {
+            background-color: rgba(227, 53, 57, 0.2);
+            color: #ff6b6e;
+            border: 1px solid rgba(227, 53, 57, 0.5);
+        }
+        .type-badge-texture {
+            background-color: rgba(68, 176, 227, 0.2);
+            color: #64B5F6;
+            border: 1px solid rgba(68, 176, 227, 0.5);
+        }
+
+        .version {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            white-space: nowrap;
+            display: inline-block;
+        }
+
+        .modrinth-logo {
+            width: 32px;
+            height: auto;
+            vertical-align: middle;
+            transition: transform 0.2s ease;
+        }
+
+        a:hover .modrinth-logo {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="btn-back">← Torna alla Mod List</a>
+        
+        <h1>Storico Changelog</h1>
+
+        <div id="changelog-list">
+            <!-- Popolato dinamicamente da JS -->
+        </div>
+    </div>
+
+    <script>
+        fetch('changelog.json')
+            .then(res => res.json())
+            .then(changelogs => {
+                const container = document.getElementById('changelog-list');
+                
+                changelogs.forEach((item, index) => {
+                    const details = document.createElement('details');
+                    if (index === 0) details.setAttribute('open', '');
+
+                    // Note generali
+                    let notesHTML = '';
+                    if (item.notes && item.notes.length > 0) {
+                        const listItems = item.notes.map(note => {
+                            let tag = '';
+                            if (note.type === 'add') tag = '<span class="tag-add">[AGGIUNTO]</span> ';
+                            else if (note.type === 'remove') tag = '<span class="tag-remove">[RIMOSSO]</span> ';
+                            else if (note.type === 'fix') tag = '<span class="tag-fix">[FIX]</span> ';
+
+                            return `<li>${tag}${note.text}</li>`;
+                        }).join('');
+                        
+                        notesHTML = `<ul>${listItems}</ul>`;
+                    }
+
+                    // Mini Tabella Mod/Textures
+                    let tableHTML = '';
+                    if (item.items && item.items.length > 0) {
+                        const rows = item.items.map(mod => {
+                            const isTex = mod.isTexture === true;
+                            const rowClass = isTex ? 'row-texture' : 'row-mod';
+                            const badgeHTML = isTex 
+                                ? '<span class="item-type-badge type-badge-texture">Texture</span>' 
+                                : '<span class="item-type-badge type-badge-mod">Mod</span>';
+
+                            return `
+                                <tr class="${rowClass}">
+                                    <td>
+                                        <strong>${mod.nome}</strong>
+                                        ${badgeHTML}
+                                    </td>
+                                    <td><span class="version">${mod.versione}</span></td>
+                                    <td>${mod.descrizione}</td>
+                                    <td>
+                                        <a href="${mod.link}" target="_blank" title="Scarica">
+                                            <img src="modrinth-logo.png" alt="Download" class="modrinth-logo">
+                                        </a>
+                                    </td>
+                                </tr>
+                            `;
+                        }).join('');
+
+                        tableHTML = `
+                            <table class="changelog-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Versione</th>
+                                        <th>Descrizione</th>
+                                        <th>Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rows}
+                                </tbody>
+                            </table>
+                        `;
+                    }
+
+                    details.innerHTML = `
+                        <summary>
+                            Versione ${item.version} - ${item.title}
+                            <span class="date-badge">${item.date}</span>
+                        </summary>
+                        <div class="changelog-content">
+                            ${notesHTML}
+                            ${tableHTML}
+                        </div>
+                    `;
+
+                    container.appendChild(details);
+                });
+            })
+            .catch(err => console.error('Errore nel caricamento del changelog:', err));
+    </script>
+</body>
+</html>

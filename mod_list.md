@@ -62,6 +62,10 @@
 - Explorer's Compass 2.6.0 (https://modrinth.com/mod/explorers-compass/versions?g=1.21.1&l=fabric)
 - Concurrent Chunk Management Engine 0.4.0-alpha.0.30 (https://modrinth.com/mod/c2me-fabric/versions?g=1.21.1)
 - ModernFix 5.25.1 (https://modrinth.com/mod/modernfix/versions?g=1.21.1&l=fabric)
+- Beautify: Refabricated 3.6.5 (https://modrinth.com/mod/beautify-refabricated/versions?g=1.21.1)
+- Vanilla Backport 1.2.2 (https://modrinth.com/mod/vanillabackport/versions?g=1.21.1&l=fabric)
+- Platform 1.4.2 (https://modrinth.com/mod/platform/versions?g=1.21.1&l=fabric)
+
 
 # Client Only
 - 3D Armor 0.9.4.2 (https://modrinth.com/mod/armor-3d/versions?g=1.21.1&l=fabric)

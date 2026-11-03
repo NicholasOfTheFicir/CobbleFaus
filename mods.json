@@ -80,6 +80,16 @@
     "isLibrary": true
   },
   {
+    "nome": "Beautify: Refrabricated",
+    "versione": "3.6.5",
+    "descrizione": "Aggiunge decorazioni in stile vanilla.",
+    "link": "https://cdn.modrinth.com/data/DhSSvaxs/versions/qpzaFKKc/beautify-3.6.5-fabric%2B1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Cardinal Components API",
     "versione": "6.1.3",
     "descrizione": "Libreria per l'aggiunta di dati agli oggetti/entità.",
@@ -297,7 +307,7 @@
     "isCobblemon": false,
     "clientSide": true,
     "serverSide": false,
-    "isLibrary": false 
+    "isLibrary": false
   },
   {
     "nome": "Entity Culling",
@@ -410,7 +420,7 @@
     "isLibrary": true
   },
   {
-    "nome": "Global Pakcs",
+    "nome": "Global Packs",
     "versione": "21.0.6",
     "descrizione": "Mod per la gestione delle texture packs.",
     "link": "https://cdn.modrinth.com/data/NRLPy2mk/versions/ErTctr3A/globalpacks-fabric-1.21.1-21.0.6.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
@@ -570,6 +580,16 @@
     "isLibrary": true
   },
   {
+    "nome": "Platform",
+    "versione": "1.4.2",
+    "descrizione": "Libreria basata su Architectury.",
+    "link": "https://cdn.modrinth.com/data/i6fiqm5y/versions/UBpoaJQa/Platform-fabric-1.21.1-1.4.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
     "nome": "Radical Cobblemon Trainers",
     "versione": "0.19.2-beta",
     "descrizione": "Aggiunge allenatori NPC da sfidare.",
@@ -674,6 +694,16 @@
     "versione": "10.1.39",
     "descrizione": "Zaini spaziosi ed utili per l'esplorazione.",
     "link": "https://cdn.modrinth.com/data/rlloIFEV/versions/npKsvQvE/travelersbackpack-fabric-1.21.1-10.1.39.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Vanilla Backport",
+    "versione": "1.2.2",
+    "descrizione": "Backporting delle versioni successive di Minecraft.",
+    "link": "https://cdn.modrinth.com/data/6xwxDTgf/versions/pdLJZwZ1/VanillaBackport-fabric-1.21.1-1.2.2.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
     "isCobblemon": false,
     "clientSide": true,
     "serverSide": true,

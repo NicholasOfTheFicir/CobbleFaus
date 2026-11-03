@@ -44,6 +44,31 @@
         h1 { color: var(--primary-color); }
         h2 { color: var(--secondary-color); margin-bottom: 15px; }
 
+        /* PULSANTE CHANGELOG HEADER */
+        .header-actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: -10px;
+        }
+        
+        .btn-changelog {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .btn-changelog:hover {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 0 10px rgba(227, 53, 57, 0.4);
+        }
+
         .info-box {
             background-color: #2c3244;
             padding: 15px;
@@ -256,11 +281,113 @@
             font-weight: bold;
             color: var(--text-color);
         }
+
+        /* POPUP MODALE OVERLAY */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            backdrop-filter: blur(3px);
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background-color: var(--container-bg);
+            border-top: 5px solid var(--primary-color);
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 520px;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px; right: 20px;
+            font-size: 24px;
+            color: #8fa1c9;
+            cursor: pointer;
+            background: none; border: none; padding: 0;
+        }
+
+        .modal-close:hover { color: var(--primary-color); }
+
+        /* AZIONI PULSANTI MODALE */
+        .modal-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        /* Pulsante Rosso (Principale - Vai al download) */
+        .btn-modal-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 12px rgba(227, 53, 57, 0.4);
+        }
+
+        .btn-modal-primary:hover {
+            background-color: #c0282c;
+            border-color: #c0282c;
+            color: white;
+        }
+
+        /* Pulsante Azzurrino (Secondario - Ho capito) */
+        .btn-modal-secondary {
+            background-color: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 10px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .btn-modal-secondary:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            box-shadow: 0 0 10px rgba(68, 176, 227, 0.4);
+        }
+
+        .tag-add { color: #81c784; font-weight: bold; }
+        .tag-remove { color: #e57373; font-weight: bold; }
+        .tag-fix { color: #64B5F6; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Pulsante che porta alla pagina Changelog -->
+        <div class="header-actions">
+            <a href="changelog.html" class="btn-changelog">STORICO CHANGELOG</a>
+        </div>
+
         <img src="cobblefaus.png" alt="CobbleFaus" class="server-logo">
         
         <div class="info-box">
@@ -305,7 +432,7 @@
             </div>
         </div>
         
-        <!-- NUOVA BOLLA NOTA BENE (Inizia nascosta tramite style="display: none;") -->
+        <!-- BOLLA NOTA BENE -->
         <div id="texture-note" class="info-box" style="display: none; border-left-color: var(--secondary-color); text-align: center;">
             <strong>⚠️ NOTA:</strong> I pacchetti texture vanno inseriti all'interno della cartella <code>.minecraft/global_packs/required_resources</code> di Minecraft! ⚠️<br>
             Se la cartella non esiste ancora, creala a mano.
@@ -331,14 +458,29 @@
         </footer>
     </div>
 
+    <!-- Popup Modale Ultimo Aggiornamento -->
+    <div class="modal-overlay" id="updateModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2 style="margin-top: 0; text-align: left;">🚀 Nuovo Aggiornamento!</h2>
+            <p><strong id="modalVersionTitle">...</strong></p>
+            <ul id="modalChangesList" style="color: #8fa1c9; line-height: 1.8;">
+                <!-- Caricato dinamicamente dal JSON -->
+            </ul>
+            <div class="modal-actions">
+                <a href="changelog.html" class="btn-modal-primary" id="modalDownloadBtn">Vai al download</a>
+                <button class="btn-modal-secondary" id="modalUnderstoodBtn">Ho capito</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         let allItems = [];
         const tableBody = document.getElementById('mod-table-body');
         const filterButtons = document.querySelectorAll('.filter-btn');
-        const switcherButtons = document.querySelectorAll('.switcher-btn');
+        const switcherButtons = document.querySelectorAll('.switcher-container .switcher-btn');
         const textureNote = document.getElementById('texture-note');
 
-        // Funzione centralizzata per caricare un file JSON
         function loadData(file) {
             fetch(file)
                 .then(response => response.json())
@@ -349,16 +491,13 @@
                 .catch(error => console.error(`Errore nel caricamento del JSON (${file}):`, error));
         }
 
-        // Caricamento iniziale (Mods di default)
         loadData('mods.json');
 
-        // Gestione dei click sui nuovi pulsanti Mods/Textures
         switcherButtons.forEach(button => {
             button.addEventListener('click', () => {
                 switcherButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
                 
-                // Mostra la nota solo se siamo nella tab Textures
                 if (button.dataset.file === 'textures.json') {
                     textureNote.style.display = 'block';
                 } else {
@@ -435,6 +574,57 @@
                 applyFilters();
             });
         });
+
+        // Logica Popup Modale
+        fetch('changelog.json')
+            .then(res => res.json())
+            .then(changelogs => {
+                if (!changelogs || changelogs.length === 0) return;
+                const latest = changelogs[0];
+
+                if (localStorage.getItem('last_seen_update') !== latest.id) {
+                    document.getElementById('modalVersionTitle').innerText = `Versione ${latest.version} - ${latest.title} (${latest.date})`;
+                    
+                    const listContainer = document.getElementById('modalChangesList');
+                    listContainer.innerHTML = '';
+
+                    if (latest.notes) {
+                        latest.notes.forEach(note => {
+                            let tag = '';
+                            if (note.type === 'add') tag = '<span class="tag-add">[AGGIUNTO]</span> ';
+                            else if (note.type === 'remove') tag = '<span class="tag-remove">[RIMOSSO]</span> ';
+                            else if (note.type === 'fix') tag = '<span class="tag-fix">[FIX]</span> ';
+
+                            const li = document.createElement('li');
+                            li.innerHTML = `${tag}${note.text}`;
+                            listContainer.appendChild(li);
+                        });
+                    }
+
+                    const modal = document.getElementById('updateModal');
+                    modal.classList.add('active');
+
+                    // Chiusura TEMPORANEA (La croce o click fuori dal popup)
+                    const chiudiTemporaneo = () => {
+                        modal.classList.remove('active');
+                    };
+
+                    // Salvataggio nel localStorage (per "Ho capito" e "Vai al download")
+                    const salvaVisto = () => {
+                        localStorage.setItem('last_seen_update', latest.id);
+                    };
+
+                    document.getElementById('closeModal').onclick = chiudiTemporaneo;
+                    document.getElementById('modalUnderstoodBtn').onclick = () => {
+                        modal.classList.remove('active');
+                        salvaVisto();
+                    };
+                    document.getElementById('modalDownloadBtn').onclick = salvaVisto;
+
+                    modal.onclick = (e) => { if (e.target === modal) chiudiTemporaneo(); };
+                }
+            })
+            .catch(err => console.error('Errore nel caricamento del changelog:', err));
     </script>
 </body>
 </html>
