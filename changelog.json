@@ -1,5 +1,22 @@
 [
   {
+    "id": "6_nov_2026",
+    "version": "1.1.1",
+    "title": "Exp Fix",
+    "date": "6 Novembre 2026",
+    "notes": [
+      { "type": "add", "text": "Aggiunta la mod <strong>Fix Cobblemon Pokemon Experience</strong> (Server side only)." }
+    ],
+    "items": [
+      {
+        "nome": "Fix Cobblemon Pokemon Experience",
+        "versione": "1.2.0",
+        "descrizione": "Modifica il funzionamento dell'exp per essere distribuita durante la battaglia.",
+        "isTexture": false
+      }
+    ]
+  },
+  {
     "id": "3_nov_2026",
     "version": "1.1",
     "title": "Prestazioni + Design + Vanilla Backport",

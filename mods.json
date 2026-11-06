@@ -390,6 +390,16 @@
     "isLibrary": false
   },
   {
+    "nome": "Fix Cobblemon Pokemon Experience",
+    "versione": "1.2.0",
+    "descrizione": "Modifica il funzionamento dell'exp per essere distribuita durante la battaglia.",
+    "link": "https://cdn.modrinth.com/data/UsGc71LY/versions/OjZ0T9Yy/fix_cobblemon_pokemon_experience-1.2.0%2B1.21.1-fabric.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Forge Config API Port",
     "versione": "21.1.6",
     "descrizione": "Libreria per utilizzare i file di configurazione di Forge su Fabric.",

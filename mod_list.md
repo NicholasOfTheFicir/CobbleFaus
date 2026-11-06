@@ -33,6 +33,7 @@
 - Cobblemon Pasture Loot 1.0.5 (https://modrinth.com/mod/cobblemon-pasture-loot/versions?g=1.21.1)
 - Cobblemon: PlayerXP 1.0.9 (https://modrinth.com/mod/cobblemon-playerxp/versions?g=1.21.1&l=fabric)
 - Cobblemon: SafePastures 1.1.2 (https://modrinth.com/mod/cobblemon-safepastures/versions?g=1.21.1&l=fabric)
+- Fix Cobblemon Pokemon Experience 1.2.0 (https://modrinth.com/mod/fix-cobblemon-pokemon-experience/versions?l=fabric)
 
 
 # Misc Mods

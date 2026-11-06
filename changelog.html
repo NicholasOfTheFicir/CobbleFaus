@@ -144,7 +144,11 @@
             text-align: left;
         }
 
-        .changelog-table td:nth-child(2), .changelog-table td:nth-child(4) {
+        /* Selezioniamo in base alla colonna, stando attenti a se esiste o meno la colonna download */
+        .changelog-table td:nth-child(2) {
+            text-align: center;
+        }
+        .changelog-table td.download-col {
             text-align: center;
         }
 
@@ -153,7 +157,7 @@
 
         /* DIFFERENZIAZIONE MOD VS TEXTURE SULLE RIGHE */
         .changelog-table tr.row-texture td {
-            background-color: #1e2836; /* Sfondo leggermente più azzurrato */
+            background-color: #1e2836; 
         }
         .changelog-table tr.row-texture td:first-child {
             border-left: 3px solid var(--secondary-color);
@@ -246,12 +250,34 @@
                     // Mini Tabella Mod/Textures
                     let tableHTML = '';
                     if (item.items && item.items.length > 0) {
+                        
+                        // Controllo globale per questa specifica versione: c'è almeno un link?
+                        const hasAnyLink = item.items.some(mod => mod.link && mod.link.trim() !== "");
+
                         const rows = item.items.map(mod => {
                             const isTex = mod.isTexture === true;
                             const rowClass = isTex ? 'row-texture' : 'row-mod';
                             const badgeHTML = isTex 
                                 ? '<span class="item-type-badge type-badge-texture">Texture</span>' 
                                 : '<span class="item-type-badge type-badge-mod">Mod</span>';
+                            
+                            let downloadTd = '';
+                            
+                            // Costruisce la cella di download solo se la colonna deve esistere
+                            if (hasAnyLink) {
+                                if (mod.link) {
+                                    downloadTd = `
+                                        <td class="download-col">
+                                            <a href="${mod.link}" target="_blank" title="Scarica">
+                                                <img src="modrinth-logo.png" alt="Download" class="modrinth-logo">
+                                            </a>
+                                        </td>
+                                    `;
+                                } else {
+                                    // Se la colonna c'è, ma questa specifica mod non ha il link, lascia la cella vuota
+                                    downloadTd = `<td class="download-col"></td>`;
+                                }
+                            }
 
                             return `
                                 <tr class="${rowClass}">
@@ -261,14 +287,13 @@
                                     </td>
                                     <td><span class="version">${mod.versione}</span></td>
                                     <td>${mod.descrizione}</td>
-                                    <td>
-                                        <a href="${mod.link}" target="_blank" title="Scarica">
-                                            <img src="modrinth-logo.png" alt="Download" class="modrinth-logo">
-                                        </a>
-                                    </td>
+                                    ${downloadTd}
                                 </tr>
                             `;
                         }).join('');
+
+                        // Costruisce l'intestazione solo se c'è almeno un link
+                        const downloadTh = hasAnyLink ? '<th>Download</th>' : '';
 
                         tableHTML = `
                             <table class="changelog-table">
@@ -277,7 +302,7 @@
                                         <th>Nome</th>
                                         <th>Versione</th>
                                         <th>Descrizione</th>
-                                        <th>Download</th>
+                                        ${downloadTh}
                                     </tr>
                                 </thead>
                                 <tbody>
