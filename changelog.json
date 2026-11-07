@@ -5,13 +5,20 @@
     "title": "Exp Fix",
     "date": "6 Novembre 2026",
     "notes": [
-      { "type": "add", "text": "Aggiunta la mod <strong>Fix Cobblemon Pokemon Experience</strong> (Server side only)." }
+      { "type": "add", "text": "Aggiunta la mod <strong>Fix Cobblemon Pokemon Experience</strong> (Server side only)." },
+      { "type": "add", "text": "Aggiunta la mod <strong>Cobblemon: Champions and ZA Movepool Additions</strong> (Server side only)." }
     ],
     "items": [
       {
         "nome": "Fix Cobblemon Pokemon Experience",
         "versione": "1.2.0",
         "descrizione": "Modifica il funzionamento dell'exp per essere distribuita durante la battaglia.",
+        "isTexture": false
+      },
+      {
+        "nome": "Cobblemon: Champions and ZA Movepool Additions",
+        "versione": "1.1",
+        "descrizione": "Aggiorna alcuni set di mosse.",
         "isTexture": false
       }
     ]

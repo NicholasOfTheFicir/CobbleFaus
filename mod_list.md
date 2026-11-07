@@ -34,6 +34,7 @@
 - Cobblemon: PlayerXP 1.0.9 (https://modrinth.com/mod/cobblemon-playerxp/versions?g=1.21.1&l=fabric)
 - Cobblemon: SafePastures 1.1.2 (https://modrinth.com/mod/cobblemon-safepastures/versions?g=1.21.1&l=fabric)
 - Fix Cobblemon Pokemon Experience 1.2.0 (https://modrinth.com/mod/fix-cobblemon-pokemon-experience/versions?l=fabric)
+- Cobblemon: Champions and ZA Movepool Additions 1.1 (https://modrinth.com/datapack/cobblemon-champions-and-za-movepool-additions/versions)
 
 
 # Misc Mods

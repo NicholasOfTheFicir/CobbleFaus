@@ -220,6 +220,16 @@
     "isLibrary": false
   },
   {
+    "nome": "Cobblemon: Champions and ZA Movepool Additions",
+    "versione": "1.1",
+    "descrizione": "Aggiorna alcuni set di mosse.",
+    "link": "https://cdn.modrinth.com/data/ZOTfFv08/versions/8tWctsWd/Cobblemon%20ZA-Champions%20Movepool%20Additions%20V1.1.zip?mr_download_reason=standalone",
+    "isCobblemon": true,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Cobblemon: Mega Showdown",
     "versione": "1.3.1",
     "descrizione": "Aggiunge le Mega Evoluzioni, Mosse-Z, Dynamax/Gigamax e Teracristallizzazione.",
