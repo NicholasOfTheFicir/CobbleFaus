@@ -1,5 +1,22 @@
 [
   {
+    "id": "10_nov_2026",
+    "version": "1.1.2",
+    "title": "Support for Vanilla Backport",
+    "date": "10 Novembre 2026",
+    "notes": [
+      { "type": "add", "text": "Aggiunta la mod <strong>Vanilla Backport Compat</strong> (Server side only)." }
+    ],
+    "items": [
+      {
+        "nome": "Vanilla Backport Compat",
+        "versione": "2.3",
+        "descrizione": "Aggiunge features della backport ai biomi moddati.",
+        "isTexture": false
+      }
+    ]
+  },
+  {
     "id": "6_nov_2026",
     "version": "1.1.1",
     "title": "Exp Fix",

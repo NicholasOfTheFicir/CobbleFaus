@@ -730,6 +730,16 @@
     "isLibrary": false
   },
   {
+    "nome": "Vanilla Backport Compat",
+    "versione": "2.3",
+    "descrizione": "Aggiunge features della backport ai biomi moddati.",
+    "link": "https://cdn.modrinth.com/data/jcYHXHwz/versions/cIu6DvNo/vb-compat-2.3-1.21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Waystones",
     "versione": "21.1.46",
     "descrizione": "Pietre per il teletrasporto rapido tra zone.",
