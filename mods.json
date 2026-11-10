@@ -700,6 +700,16 @@
     "isLibrary": false
   },
   {
+    "nome": "TerraBlender",
+    "versione": "4.1.0.8",
+    "descrizione": "Layer di compatibilità tra mod per la generazione dei terreni.",
+    "link": "https://cdn.modrinth.com/data/kkmrDlKT/versions/XNtIBXyQ/TerraBlender-fabric-1.21.1-4.1.0.8.jar?mr_download_reason=standalone",
+    "isCobblemon": false,
+    "clientSide": false,
+    "serverSide": true,
+    "isLibrary": true
+  },
+  {
     "nome": "Terralith",
     "versione": "2.6.2",
     "descrizione": "Migliora drasticamente la generazione dei biomi.",

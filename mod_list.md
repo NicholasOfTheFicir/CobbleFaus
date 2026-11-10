@@ -95,3 +95,4 @@
 - Load My F***ing Tags 1.1.1 (https://modrinth.com/mod/lmft/versions?g=1.21.1&l=fabric)
 - Styled Chat 2.6.1 (https://modrinth.com/mod/styled-chat/versions?c=release&g=1.21.1&l=fabric)
 - Vanilla Backport Compat 2.3 (https://modrinth.com/datapack/vb-compat/versions?g=1.21.1&l=fabric)
+- TerraBlender 4.1.0.8 (https://modrinth.com/mod/terrablender/versions?g=1.21.1&l=fabric)

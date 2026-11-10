@@ -5,13 +5,20 @@
     "title": "Support for Vanilla Backport",
     "date": "10 Novembre 2026",
     "notes": [
-      { "type": "add", "text": "Aggiunta la mod <strong>Vanilla Backport Compat</strong> (Server side only)." }
+      { "type": "add", "text": "Aggiunta la mod <strong>Vanilla Backport Compat</strong> (Server side only)." },
+      { "type": "add", "text": "Aggiunta la mod <strong>TerraBlender</strong> (Server side only)." }
     ],
     "items": [
       {
         "nome": "Vanilla Backport Compat",
         "versione": "2.3",
         "descrizione": "Aggiunge features della backport ai biomi moddati.",
+        "isTexture": false
+      },
+      {
+        "nome": "TerraBlender",
+        "versione": "4.1.0.8",
+        "descrizione": "Layer di compatibilità tra mod per la generazione dei terreni.",
         "isTexture": false
       }
     ]
