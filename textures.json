@@ -18,5 +18,15 @@
     "clientSide": true,
     "serverSide": false,
     "isLibrary": false
+  },
+  {
+    "nome": "Midnighttigger's Default Connected Textures",
+    "versione": "Fusion_1.3.0",
+    "descrizione": "Aggiunge texture connesse per vetro, librerie, grate di rame e sandstone (Opzionale).",
+    "link": "https://cdn.modrinth.com/data/TjOXlt9Y/versions/UPBKvt5T/Midnighttigger%27s%20Default%20Connected%20Textures.zip?mr_download_reason=standalone&mr_game_version=1.21.1",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
   }
 ]

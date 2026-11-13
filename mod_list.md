@@ -22,6 +22,10 @@
     - CobbleFurnies 1.2 (https://modrinth.com/mod/cobblefurnies/versions?l=fabric)
         - Athena 4.0.6 (https://modrinth.com/mod/athena-ctm/versions?g=1.21.1&l=fabric)
 - Cobblemon Pokemon Badges 0.1.1 (https://modrinth.com/mod/cobblemon-pokemon-badges/versions?g=1.21.1&l=fabric)
+- Cobblemon: Legendary Monuments 8.2 (https://modrinth.com/mod/legendary-monuments/versions?c=release&l=fabric)
+- Cobblemon Ultra Space 1.4.1 (https://modrinth.com/mod/cobblemon-ultra-space/versions)
+- AllTheMons x Mega Showdown v5.0 (https://modrinth.com/datapack/allthemons-x-mega-showdown-legacy/versions?l=fabric)
+- CobbledGacha 3.0.3 (https://modrinth.com/mod/cobbledgacha/versions?l=fabric)
 
 # Client Only
 - Lumyrei 1.1.3 (https://modrinth.com/mod/lumyrei/versions)
@@ -67,6 +71,9 @@
 - Beautify: Refabricated 3.6.5 (https://modrinth.com/mod/beautify-refabricated/versions?g=1.21.1)
 - Vanilla Backport 1.2.2 (https://modrinth.com/mod/vanillabackport/versions?g=1.21.1&l=fabric)
 - Platform 1.4.2 (https://modrinth.com/mod/platform/versions?g=1.21.1&l=fabric)
+- Chipped 4.0.2 (https://modrinth.com/mod/chipped/versions?g=1.21.1&l=fabric)
+- Resourceful Lib 3.0.12 (https://modrinth.com/mod/resourceful-lib/versions?g=1.21.1&l=fabric)
+- Lithostitched 1.8.1 (https://modrinth.com/mod/lithostitched/versions?g=1.21.1&l=fabric)
 
 
 # Client Only
@@ -86,12 +93,12 @@
 - ImmediatelyFast 1.6.15 (https://modrinth.com/mod/immediatelyfast/versions?c=release&g=1.21.1&l=fabric)
 - Enhanced Block Entities 0.10.2 (https://modrinth.com/mod/ebe/versions?g=1.21.1&l=fabric)
 - Global Pakcs 21.0.6 (https://modrinth.com/mod/globalpacks/versions?c=release&g=1.21.1&l=fabric)
+- Fusion 1.3.16 (https://modrinth.com/mod/fusion-connected-textures/versions?c=release&g=1.21.1&l=fabric)
 
 # Sever Only
 - FallingTree 1.21.1.11 (https://modrinth.com/mod/fallingtree/versions?g=1.21.1&l=fabric)
 - Ore Vein Miner 7.01R (https://modrinth.com/datapack/ore-vein-miner/versions?g=1.21.1&l=fabric)
 - Terralith 2.6.2 (https://modrinth.com/datapack/terralith/versions?g=1.21.1&l=fabric)
-    - Lithostitched 1.8.1 (https://modrinth.com/mod/lithostitched/versions?g=1.21.1&l=fabric)
 - Load My F***ing Tags 1.1.1 (https://modrinth.com/mod/lmft/versions?g=1.21.1&l=fabric)
 - Styled Chat 2.6.1 (https://modrinth.com/mod/styled-chat/versions?c=release&g=1.21.1&l=fabric)
 - Vanilla Backport Compat 2.3 (https://modrinth.com/datapack/vb-compat/versions?g=1.21.1&l=fabric)

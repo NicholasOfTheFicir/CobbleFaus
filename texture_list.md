@@ -6,3 +6,4 @@
 
 # Misc Textures
 ## Client & Server Side Textures
+- Midnighttigger's Default Connected Textures Fusion_1.3.0 (https://modrinth.com/resourcepack/mt-ct-d/versions?c=release&g=1.21.1)

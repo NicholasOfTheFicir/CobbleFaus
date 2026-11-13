@@ -40,6 +40,16 @@
     "isLibrary": false
   },
   {
+    "nome": "AllTheMons x Mega Showdown",
+    "versione": "v5.0",
+    "descrizione": "Aggiunge i Pokémon mancanti e aggiorna diversi modelli datati e incompleti.",
+    "link": "https://cdn.modrinth.com/data/odZZdRCE/versions/qCn31XSy/ATM%20x%20MSD%20%5Bv5.0%5D.jar?mr_download_reason=standalone",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Architectury API",
     "versione": "13.0.11",
     "descrizione": "Libreria per la compatibilità tra modloader.",
@@ -100,6 +110,16 @@
     "isLibrary": true
   },
   {
+    "nome": "Chipped",
+    "versione": "4.0.2",
+    "descrizione": "Aggiunge nuove varianti ai blocchi vanilla.",
+    "link": "https://cdn.modrinth.com/data/BAscRYKm/versions/6h2mVZcb/chipped-fabric-1.21.1-4.0.2.jar?mr_download_reason=standalone",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Cloth Config API",
     "versione": "15.0.140",
     "descrizione": "Libreria per la creazione di menu di configurazione.",
@@ -114,6 +134,16 @@
     "versione": "1.2",
     "descrizione": "Mobili e decorazioni a tema Pokémon.",
     "link": "https://cdn.modrinth.com/data/AXY1OO9m/versions/54k31lEX/CobbleFurnies-fabric-1.2.jar?mr_download_reason=standalone&mr_loader=fabric",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "CobbledGacha",
+    "versione": "3.0.3",
+    "descrizione": "Aggiunge delle gacha machines su cui spendere le monete d'oro. Let's go gambling.",
+    "link": "https://cdn.modrinth.com/data/c1OpnQs3/versions/kqpoF9m4/cobbledgacha-fabric-1.21.1-3.0.3.jar?mr_download_reason=standalone",
     "isCobblemon": true,
     "clientSide": true,
     "serverSide": true,
@@ -220,12 +250,32 @@
     "isLibrary": false
   },
   {
+    "nome": "Cobblemon Ultra Space",
+    "versione": "1.4.1",
+    "descrizione": "Aggiunge gli Ultravarchi per catturare le Ultracreature.",
+    "link": "https://cdn.modrinth.com/data/Tojtoj2r/versions/bjrAHdFT/cobblemon-ultra-space-1.4.1.jar?mr_download_reason=standalone",
+    "isCobblemon": true,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
     "nome": "Cobblemon: Champions and ZA Movepool Additions",
     "versione": "1.1",
     "descrizione": "Aggiorna alcuni set di mosse.",
     "link": "https://cdn.modrinth.com/data/ZOTfFv08/versions/8tWctsWd/Cobblemon%20ZA-Champions%20Movepool%20Additions%20V1.1.zip?mr_download_reason=standalone",
     "isCobblemon": true,
     "clientSide": false,
+    "serverSide": true,
+    "isLibrary": false
+  },
+  {
+    "nome": "Cobblemon: Legendary Monuments",
+    "versione": "8.2",
+    "descrizione": "Aggiunge luoghi per far spawnare Pokémon Leggendari e Mitici.",
+    "link": "https://cdn.modrinth.com/data/m6RyHSbV/versions/dcZ53MPy/legendarymonuments-fabric-1.21.1-8.2-Keep-Fighting.jar?mr_download_reason=standalone",
+    "isCobblemon": true,
+    "clientSide": true,
     "serverSide": true,
     "isLibrary": false
   },
@@ -420,6 +470,16 @@
     "isLibrary": true
   },
   {
+    "nome": "Fusion",
+    "versione": "1.3.16",
+    "descrizione": "Supporto per le texture con connected block in formato CTM Optifine.",
+    "link": "https://cdn.modrinth.com/data/p19vrgc2/versions/LQSMRNBf/fusion-1.3.16-fabric-mc1.21.jar?mr_download_reason=standalone",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": false,
+    "isLibrary": false
+  },
+  {
     "nome": "Fzzy Config",
     "versione": "0.7.7",
     "descrizione": "Libreria per menu di configurazione.",
@@ -515,7 +575,7 @@
     "descrizione": "Libreria necessaria per la generazione del mondo (Terralith).",
     "link": "https://cdn.modrinth.com/data/XaDC71GB/versions/GZFp8lnS/lithostitched-1.8.1-fabric-21.1.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric",
     "isCobblemon": false,
-    "clientSide": false,
+    "clientSide": true,
     "serverSide": true,
     "isLibrary": true
   },
@@ -638,6 +698,16 @@
     "clientSide": true,
     "serverSide": true,
     "isLibrary": false
+  },
+  {
+    "nome": "Resourceful Lib",
+    "versione": "3.0.12",
+    "descrizione": "Libreria contenente diverse utility API.",
+    "link": "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar?mr_download_reason=standalone",
+    "isCobblemon": false,
+    "clientSide": true,
+    "serverSide": true,
+    "isLibrary": true
   },
   {
     "nome": "Roughly Enough Items",
